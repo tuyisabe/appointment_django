@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+{% for post in news %}
+<article class="media-content-section">
+   <div class="panel-group col-sm-12">
+      <div class="panel panel-success">
+         <div class="panel-heading"
+        <a href="#" class="mr-2">{{ post.date |date:'D F Y' }}</a>
+        <small class="text-muted">Author: {{ post.author }}</small>
+      </div>
+      <div class="panel-body"> 
+         <h2><a href="#" class="article-title">{{ post.title }}</a></h2>
+         <p>{{ post.desc }}</p>
+         <p>{{ post.details }}</p>
+      </div>
+      </div>
+
+</article>
+{% endfor %}
+<article>
+<div class="panel-group">
+   <div class="panel panel-warning">
+   <div class="panel-heading">heading</div>
+   <div class="panel-body">This is the body part</div>
+</div></div>
+</article>
+{% endblock %}

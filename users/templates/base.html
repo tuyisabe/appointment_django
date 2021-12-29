@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body style="background: blue;" >
+<div class="container">
+<div class="row">
+<!-- header-->
+    <div class="container" style="background-color: black; height: 80px;">
+     <ul class="nav nav-tabs justify-content-right">
+        <li class="nav-item active">
+           <a href="#" class="nav-link"> Home </a>
+        </li>
+        <li class="nav-item dropdown">
+         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"> Contact </a>   
+           <div class="dropdown-menu">
+            <a href="#" class="dropdown-item"> emails </a>
+            <a href="#" class="dropdown-item"> phone </a>
+            <a href="#" class="dropdown-item"> facebook </a>
+           </div>
+            
+         </li>
+         <li class="nav-item">
+            <a href="#" class="nav-link"> About Us </a>
+         </li>
+     </ul>
+    </div>
+
+    <!-- left side bar -->
+    
+        <div class="col-sm-3" style="background-color: #333; height: 600px;">
+           <ul class="nav">
+              <li class="nav-item">
+                <a href="#" class="nav-link disable">  Dashboard
+              </li>
+               <li class="nav-item">
+                  <a href="#" class="nav-link">  Dashboard
+               </li>
+               <li class="nav-item">
+                  <a href="#" class="nav-link">  Dashboard
+               </li>
+               <li class="nav-item">
+                  <a href="#" class="nav-link">  Dashboard
+               </li>
+           </ul>
+        </div>
+    
+        <!-- main content -->
+    <div class="col-sm-9" style="background-color: white; height:600px;">
+            {% block content  %}{% endblock  %}  
+</div> 
+</div>
+<div class="row">
+<div class="col-sm-12" style="background-color: #333; height: 60px; color:white;text-align:center;padding-top:25px;">
+   <p style='font-size: 20px;'> copyright 2021 </p>
+</div>
+</div>
+</div> 
+<!-- JavaScript Bundle with Popper -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

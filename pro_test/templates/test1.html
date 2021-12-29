@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% if title %}
+        <title>this is for testing {{ title }}</title>
+
+        {% else %}
+
+        <title>this is for testing </title>
+
+         {% endif %}
+    </head>
+    <body>
+        <h1> THIS IS THE PAGE FOR TESTING</h1>
+
+        {% for post in contex %}
+
+        <h3>Names: {{ post.name }} </h3>
+        <p>Status: {{ post.status }}</p>    
+        <p>Career: {{ post.career }} </p>    
+        <p>Location: {{ post.location }} </p>   
+    
+         {% endfor %}
+    </body>
+</html>
